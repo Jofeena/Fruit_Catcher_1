@@ -1,29 +1,33 @@
 <!DOCTYPE html><html lang="en"><head>
-    <script src="libraries/p5.js"></script>
-    <script src="libraries/p5.dom.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-    <script src="libraries/matter.js"></script>
-    <script src="libraries/p5.play.js"></script>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="matter.js"></script>
+    <script src="p5.play.js"></script>
    <!-- The core Firebase JS SDK is always required and must be listed first -->
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
 
 <script>
   // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyDfCQU-Oj5xyeNqE4tojsEzHNe6fSg5qXA",
-    authDomain: "fruit-catcher-3e91f.firebaseapp.com",
-    databaseURL: "https://fruit-catcher-3e91f-default-rtdb.firebaseio.com",
-    projectId: "fruit-catcher-3e91f",
-    storageBucket: "fruit-catcher-3e91f.appspot.com",
-    messagingSenderId: "970454140774",
-    appId: "1:970454140774:web:15525f6bfdc6537820aaa7"
+    apiKey: "AIzaSyDgidQMzoDhFsE15uh1-otRz_mHTm42iXc",
+    authDomain: "fruitcatcherdebug1.firebaseapp.com",
+    projectId: "fruitcatcherdebug1",
+    storageBucket: "fruitcatcherdebug1.appspot.com",
+    messagingSenderId: "472066026704",
+    appId: "1:472066026704:web:442325823bdeeee2b902d5",
+    measurementId: "G-JKHRB0WL9F"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 </script>
     <!--Add Your JS files here -->
     <script src="js/player.js"></script>
